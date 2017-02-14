@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="move_count">Move Count:</string>
+    <string name="sequence">Sequence:</string>
+    <string name="Restart">Restart</string>
+    <string name="Auto">Auto</string>
+</resources>

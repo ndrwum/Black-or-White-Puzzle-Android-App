@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    android:padding="50dp"
+    tools:context="com.tikeon.ndrwum.assignment1.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/sq0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:paddingEnd="4dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:padding="4dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- Layout to house cells of each row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!-- Each cell -->
+                <Button
+                    android:id="@+id/sq4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- Layout to house cells of each row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!-- Each cell -->
+                <Button
+                    android:id="@+id/sq8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- Layout to house cells of each row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!-- Each cell -->
+                <Button
+                    android:id="@+id/sq12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/sq15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:id="@+id/submenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/move_count"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:text="@string/move_count"
+                android:textColor="@color/dark_gray"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/sequence"
+                android:padding="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sequence"
+                android:textColor="@color/dark_gray"
+                android:background="@drawable/bg"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/move_count"
+                android:isScrollContainer="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/swA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="A"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="B"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="C"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="D"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swE"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="E"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/swF"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="F"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swG"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="G"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swH"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="H"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swI"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="I"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/swJ"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="J"
+                        android:backgroundTint="@color/colorSkyBlue"
+                        android:onClick="pressSwitch"
+                        android:layout_weight="5"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Restart"
+                    android:onClick="resetBoard"
+                    android:backgroundTint="@color/colorAccent"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Auto"
+                    android:backgroundTint="@color/colorAccent"
+                    android:onClick="findSol"/>
+                <Button
+                    android:id="@+id/swTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test"
+                    android:backgroundTint="@color/colorAccent"
+                    android:onClick="pressSwitch"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
